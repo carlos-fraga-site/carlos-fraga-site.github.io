@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>question 2.html</title>
+<link href="css/mouse.css" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>
+<div id="wrapper">
+  <h1>When are Mice most Active?</h1>
+  <h3>Click on one of the following choices</h3>
+  <h2 onclick="wrongAnswer1()" class="choices"> Afternoon </h2>
+  <h2 onclick="wrongAnswer2()" class="choices"> Morning </h2>
+  <h2 onclick="rightAnswer()" class="choices"> Night </h2>
+  <h2 onclick="wrongAnswer3()" class="choices"> All of the Above </h2>
+  <div id="feedback"></div>
+  <img id="night_" src="img/night_.jpg" /> </div>
+	
+	<script>
+      function rightAnswer(){
+         $("#feedback").html("<h2 style='color:green'> Correct! Mice are nocturnal, and will rarely be spotted during the day in your home. </h2>");
+         $("#night_").show();
+      }
+		
+		function wrongAnswer1(){
+      $("#feedback").html("<h2 style='color:red'> Mice will rarely be spotted in the afternoon. </h2>");
+      $("#night_").hide();
+   }
+   function wrongAnswer2(){
+      $("#feedback").html("<h2 style='color:red'>Incorrect, mice prefer a different time. </h2>");
+      $("#night_").hide();
+   }
+		
+		function wrongAnswer3(){
+      $("#feedback").html("<h2 style='color:red'> Mice may be active during anytime of the day, but they prefer one specific time. </h2>");
+      $("#night_").hide();
+   }
+
+   </script>
+
+</body>
+</html>
