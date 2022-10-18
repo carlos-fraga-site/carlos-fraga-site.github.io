@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Light Switch DIY Project</title>
+<link href="css/labfinal.css" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>
+	
+	<h1> How Light Switches Work </h1>
+<br>
+<br/>
+<a href="index.html"> Home </a> <a href="page2.html"> History </a> <a href="page3.html"> How Light Switches Work </a> <a href="page4.html"> Items/Hardware Needed </a> <a href="page5.html"> How to Replace a Light Switch </a> <a href="page6.html"> Resources </a> <br>
+<br>
+<br>
+	
+	
+	
+	
+	
+	
+<div id="wrapper">
+  <h1>Why are light switches necessary?</h1>
+  <h3 id="hint">Hint: Hover over the image below to find out!</h3>
+  <img onmouseenter="showAnswer()" id="switch"  src="img/switch.jpg"   /> <img onmouseleave="hideAnswer()" id="indoor" src="img/indoor.jpg" />
+  <div id="answer"></div>
+  <!-- This is a placeholder to display here the answer--> 
+  
+</div>
+<!-- closing  “wrapper” --> 
+<script>
+ function showAnswer() {
+	   $("#switch").hide();
+	   $("#indoor").show();
+	   $("#answer").html("<h2>They provide Light at Night!</h2>");
+	}
+
+function hideAnswer() {
+	   $("#switch").show();
+	   $("#indoor").hide();
+	   $("#answer").html("");  
+	}
+</script>
+	<br>
+	<br>
+	<br>
+	
+	
+	To get a better understanding on how light switches work, please watch the video below. <br>
+<br>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/CaaLw01fMo8?start=33" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	
+	
+</body>
+</html>
